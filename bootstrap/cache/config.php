@@ -3478,7 +3478,7 @@
           'stylesheets' => 
           array (
             0 => 'vendor/Modules/KamrulDashboard/libraries/jquery-context-menu/jquery.contextMenu.min.css',
-            1 => 'vendor/Modules/KamrulDashboard/css/media.css?v=1765451115',
+            1 => 'vendor/Modules/KamrulDashboard/css/media.css?v=1765455153',
           ),
           'javascript' => 
           array (
@@ -3487,7 +3487,7 @@
             2 => 'vendor/Modules/KamrulDashboard/libraries/dropzone/dropzone.js',
             3 => 'vendor/Modules/KamrulDashboard/libraries/jquery-context-menu/jquery.ui.position.min.js',
             4 => 'vendor/Modules/KamrulDashboard/libraries/jquery-context-menu/jquery.contextMenu.min.js',
-            5 => 'vendor/Modules/KamrulDashboard/js/media.js?v=1765451115',
+            5 => 'vendor/Modules/KamrulDashboard/js/media.js?v=1765455153',
           ),
         ),
         'allowed_mime_types' => 'jpg,jpeg,png,gif,txt,docx,zip,mp3,bmp,csv,xls,xlsx,ppt,pptx,pdf,mp4,doc,mpga,wav,webp',
@@ -3785,7 +3785,7 @@
   array (
     'offline' => true,
     'enable_version' => false,
-    'version' => 1765451115,
+    'version' => 1765455153,
     'scripts' => 
     array (
       0 => 'modernizr',
@@ -3881,7 +3881,7 @@
   'election' => 
   array (
     'name' => 'Election',
-    'module_version' => '1.0',
+    'module_version' => '1.1',
     'module_type' => 'plugin',
     'pid' => 63,
   ),

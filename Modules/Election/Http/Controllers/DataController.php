@@ -29,7 +29,14 @@ class DataController  extends Controller
                                 action('\Modules\Election\Http\Controllers\ElectionController@index'),
                                 __('election::lang.election'),
                                 ['icon' => 'icon-file-signature']
-                            )->order(20); } //next_lint
+                    )->order(20); } //next_lint
+                if(auth()->user()->can('electionparty_access')) {
+                    $sub->url(
+                        action('\Modules\Election\Http\Controllers\ElectionPartyController@index'),
+                        __('election::lang.electionparty'),
+                        ['icon' => 'icon-file-signature']
+                    )->order(20); }
+
                     },
                         ['icon' => 'icon-theater-masks']
                     );
@@ -53,3 +60,5 @@ class DataController  extends Controller
         }
     }
 }
+
+

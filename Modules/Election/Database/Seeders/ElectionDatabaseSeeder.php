@@ -19,10 +19,25 @@ class ElectionDatabaseSeeder extends Seeder
         $this->call(
             [
                 ElectionPermissionSeeder::class,
+                ElectionPartyPermissionSeeder::class,
+
+                ElectionPartyPermissionSeeder::class,
+
+                ElectionPartyPermissionSeeder::class,
+
                 ElectionPermissionSeeder::class,
+                ElectionPartyPermissionSeeder::class,
+
+                ElectionPartyPermissionSeeder::class,
+
+                ElectionPartyPermissionSeeder::class,
+
 
             ]
         );
     }
 }
+
+
+
 

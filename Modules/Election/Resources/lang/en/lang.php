@@ -36,6 +36,13 @@ return [
         'select_all' => 'Select all',
         'deselect_all' => 'Deselect all',
     ],
+    'electionparty' => 'ElectionParty',
+    'electionparty_add' => 'ElectionParty add',
+    'electionparty_create' => 'ElectionParty create',
+    'electionparty_edit' => 'ElectionParty edit',
+    'electionparty_show' => 'ElectionParty show',
+    'electionparty_import' => 'ElectionParty Import',
+
     'election' => 'Election',
     'election_add' => 'Election add',
     'election_create' => 'Election create',
