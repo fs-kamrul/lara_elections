@@ -1,0 +1,1 @@
+(()=>{"use strict";$(document).ready((function(){$(document).on("click",".add-courses-learn-schema-items",(function(e){e.preventDefault(),$(".courses-learn-schema-items").toggleClass("hidden")}))}))})();

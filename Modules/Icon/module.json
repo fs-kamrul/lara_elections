@@ -1,0 +1,17 @@
+{
+    "name": "Icon",
+    "alias": "icon",
+    "description": "icon Plugin",
+    "is_delete": 1,
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Icon\\Providers\\IconServiceProvider",
+        "Modules\\Icon\\Providers\\HookServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Http/helpers/helpers.php"
+    ],
+    "requires": []
+}

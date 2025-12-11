@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'name' => 'FAQ',
+    'create' => 'New faq',
+    'edit' => 'Edit faq',
+    'question' => 'Question',
+    'answer' => 'Answer',
+    'title' => 'Title',
+    'youtube_url' => 'Youtube Encoded URL',
+    'category' => 'Category',
+    'what_youll_learn' => 'What You\'ll Learn',
+    'career_prospects' => 'Career Prospects',
+    'intended_learners' => 'Intended Learners',
+    'requirements' => 'Requirements',
+    'all' => 'All',
+    'faq_schema_config' => 'FAQ schema configuration (:link)',
+    'learn_more' => 'Learn more',
+    'settings' => [
+        'title' => 'FAQ',
+        'description' => 'Settings for FAQ',
+        'enable_faq_schema' => 'Enable FAQ Schema?',
+        'enable_faq_schema_description' => 'Learn more: https://developers.google.com/search/docs/data-types/faqpage',
+    ],
+    'select_category' => 'Select a category',
+    'add_item' => 'Add item',
+    'add_curriculum' => 'Add Curriculum',
+    'lesson_title' => 'Lesson Title',
+    'lesson' => 'Lesson',
+    'section' => 'Section',
+    'section_title' => 'Section Title',
+];

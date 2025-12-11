@@ -1,0 +1,7 @@
+.mobile-menu.active {
+    left: 80%;
+    position: fixed !important;
+}
+.tns-item p {
+    text-align: center;
+}

@@ -1,0 +1,1 @@
+(()=>{"use strict";$(document).ready((function(){$(document).on("click",".add-courses-requirements-schema-items",(function(e){e.preventDefault(),$(".courses-requirements-schema-items").toggleClass("hidden")}))}))})();

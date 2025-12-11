@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:o="urn:schemas-microsoft-com:office:office"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <title>MOSAICO Responsive Email Designer</title>
+  
+  
+  <style type="text/css">
+    body{ margin: 0; padding: 0; }
+    img{ border: 0px; display: block; }
+
+    .socialLinks{ font-size: 6px; }
+    .socialLinks a{
+      display: inline-block;
+    }
+
+    .long-text p{ margin: 1em 0px; }
+    .long-text p:last-child{ margin-bottom: 0px; }
+    .long-text p:first-child{ margin-top: 0px; }
+  </style>
+  <style type="text/css">
+    /* yahoo, hotmail */
+    .ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div{ line-height: 100%; }
+    .yshortcuts a{ border-bottom: none !important; }
+    .vb-outer{ min-width: 0 !important; }
+    .RMsgBdy, .ExternalClass{
+      width: 100%;
+      background-color: #3f3f3f;
+      background-color: #3f3f3f}
+
+    /* outlook/office365 add buttons outside not-linked images and safari have 2px margin */
+    [o365] button{ margin: 0 !important; }
+
+    /* outlook */
+    table{ mso-table-rspace: 0pt; mso-table-lspace: 0pt; }
+    #outlook a{ padding: 0; }
+    img{ outline: none; text-decoration: none; border: none; -ms-interpolation-mode: bicubic; }
+    a img{ border: none; }
+
+    @media screen and (max-width: 600px) {
+      table.vb-row{
+        width: 95% !important;
+      }
+
+      .mobile-hide{ display: none !important; }
+      .mobile-textcenter{ text-align: center !important; }
+
+      .mobile-full{ 
+        width: 100% !important;
+        max-width: none !important;
+      }
+    }
+    
+    /* samsung email workaround */
+    @media screen and (max-width: 384px) {
+      .mail-message-content{ width: 414px !important; }
+    }
+  </style>
+  <style type="text/css">
+    
+    #ko_doubleArticleBlock_1 .links-color a, #ko_doubleArticleBlock_1 .links-color a:link, #ko_doubleArticleBlock_1 .links-color a:visited, #ko_doubleArticleBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_3 .links-color a, #ko_singleArticleBlock_3 .links-color a:link, #ko_singleArticleBlock_3 .links-color a:visited, #ko_singleArticleBlock_3 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_6 .links-color a, #ko_singleArticleBlock_6 .links-color a:link, #ko_singleArticleBlock_6 .links-color a:visited, #ko_singleArticleBlock_6 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_7 .links-color a, #ko_singleArticleBlock_7 .links-color a:link, #ko_singleArticleBlock_7 .links-color a:visited, #ko_singleArticleBlock_7 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_8 .links-color a, #ko_singleArticleBlock_8 .links-color a:link, #ko_singleArticleBlock_8 .links-color a:visited, #ko_singleArticleBlock_8 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_10 .links-color a, #ko_singleArticleBlock_10 .links-color a:link, #ko_singleArticleBlock_10 .links-color a:visited, #ko_singleArticleBlock_10 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_11 .links-color a, #ko_singleArticleBlock_11 .links-color a:link, #ko_singleArticleBlock_11 .links-color a:visited, #ko_singleArticleBlock_11 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_12 .links-color a, #ko_singleArticleBlock_12 .links-color a:link, #ko_singleArticleBlock_12 .links-color a:visited, #ko_singleArticleBlock_12 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_9 .links-color a, #ko_singleArticleBlock_9 .links-color a:link, #ko_singleArticleBlock_9 .links-color a:visited, #ko_singleArticleBlock_9 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_1 .links-color a, #ko_singleArticleBlock_1 .links-color a:link, #ko_singleArticleBlock_1 .links-color a:visited, #ko_singleArticleBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_2 .links-color a, #ko_singleArticleBlock_2 .links-color a:link, #ko_singleArticleBlock_2 .links-color a:visited, #ko_singleArticleBlock_2 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_5 .links-color a, #ko_singleArticleBlock_5 .links-color a:link, #ko_singleArticleBlock_5 .links-color a:visited, #ko_singleArticleBlock_5 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_singleArticleBlock_4 .links-color a, #ko_singleArticleBlock_4 .links-color a:link, #ko_singleArticleBlock_4 .links-color a:visited, #ko_singleArticleBlock_4 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_textBlock_1 .links-color a, #ko_textBlock_1 .links-color a:link, #ko_textBlock_1 .links-color a:visited, #ko_textBlock_1 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_textBlock_3 .links-color a, #ko_textBlock_3 .links-color a:link, #ko_textBlock_3 .links-color a:visited, #ko_textBlock_3 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_textBlock_4 .links-color a, #ko_textBlock_4 .links-color a:link, #ko_textBlock_4 .links-color a:visited, #ko_textBlock_4 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_textBlock_2 .links-color a, #ko_textBlock_2 .links-color a:link, #ko_textBlock_2 .links-color a:visited, #ko_textBlock_2 .links-color a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    # .links-color a, # .links-color a:link, # .links-color a:visited, # .links-color a:hover{
+      color: #cccccc;
+      color: #cccccc;
+      text-decoration: underline
+    }
+    
+    #ko_doubleImageBlock_1 a, #ko_doubleImageBlock_1 a:link, #ko_doubleImageBlock_1 a:visited, #ko_doubleImageBlock_1 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_doubleImageBlock_3 a, #ko_doubleImageBlock_3 a:link, #ko_doubleImageBlock_3 a:visited, #ko_doubleImageBlock_3 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_doubleImageBlock_4 a, #ko_doubleImageBlock_4 a:link, #ko_doubleImageBlock_4 a:visited, #ko_doubleImageBlock_4 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_1 a, #ko_imageBlock_1 a:link, #ko_imageBlock_1 a:visited, #ko_imageBlock_1 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_2 a, #ko_imageBlock_2 a:link, #ko_imageBlock_2 a:visited, #ko_imageBlock_2 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_3 a, #ko_imageBlock_3 a:link, #ko_imageBlock_3 a:visited, #ko_imageBlock_3 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_13 a, #ko_imageBlock_13 a:link, #ko_imageBlock_13 a:visited, #ko_imageBlock_13 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_9 a, #ko_imageBlock_9 a:link, #ko_imageBlock_9 a:visited, #ko_imageBlock_9 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_15 a, #ko_imageBlock_15 a:link, #ko_imageBlock_15 a:visited, #ko_imageBlock_15 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_11 a, #ko_imageBlock_11 a:link, #ko_imageBlock_11 a:visited, #ko_imageBlock_11 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_12 a, #ko_imageBlock_12 a:link, #ko_imageBlock_12 a:visited, #ko_imageBlock_12 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_14 a, #ko_imageBlock_14 a:link, #ko_imageBlock_14 a:visited, #ko_imageBlock_14 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_4 a, #ko_imageBlock_4 a:link, #ko_imageBlock_4 a:visited, #ko_imageBlock_4 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_10 a, #ko_imageBlock_10 a:link, #ko_imageBlock_10 a:visited, #ko_imageBlock_10 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_5 a, #ko_imageBlock_5 a:link, #ko_imageBlock_5 a:visited, #ko_imageBlock_5 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_7 a, #ko_imageBlock_7 a:link, #ko_imageBlock_7 a:visited, #ko_imageBlock_7 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_6 a, #ko_imageBlock_6 a:link, #ko_imageBlock_6 a:visited, #ko_imageBlock_6 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    
+    #ko_imageBlock_8 a, #ko_imageBlock_8 a:link, #ko_imageBlock_8 a:visited, #ko_imageBlock_8 a:hover{
+      color: #3f3f3f;
+      color: #3f3f3f;
+      text-decoration: underline
+    }
+    </style>
+  
+</head>
+<!--[if !(gte mso 15)]-->
+<body bgcolor="#3f3f3f" text="#919191" alink="#cccccc" vlink="#cccccc" style="margin: 0; padding: 0; background-color: #3f3f3f; color: #919191;"><!--<![endif]--><center>
+
+  
+
+  <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_16_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_2" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 6px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal"><strong>Faculty Development Training Session</strong></span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 2px; padding-bottom: 2px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_2" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F455098090_895482469283436_1796179897750969295_n.jpg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 6px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_textBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On 13 August 2024,Daffodil International University, in collaboration with the Career Development Center, hosted a Faculty Development Training Session today, conducted by the Wadhwani Foundation. <br>The session, involving 21 faculty members from the Departments of FSIT and FBE, focused on equipping educators with the skills necessary to run pilot programs of the Wadhwani Foundation's 21st Employability Course for students. This training aims to empower faculty to lead this initiative, which is designed to enhance teaching strategies and contribute to the future success of students.</p></td></tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_buttonBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 14px 12px 14px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid02obP9rCcyiCLX2py4G7GDLac1DULS1qmJsH6jxhRjmMfQfS7FF25topgVP7hxBqEWl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_15_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_doubleImageBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 570px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><![endif]--><!--
+        --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="285"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 285px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(324900px - 57000%)"><!--
+        --><table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="285" align="left">
+          
+              <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 285px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="285" height="180" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 285px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F456383491_899887238842959_8149869474132397933_n.jpg&amp;method=coverx&amp;params=570%2C360"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+              
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="285"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 285px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(324900px - 57000%)"><!--
+        --><table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="285" align="left">
+          
+              <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 285px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="285" height="180" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 285px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F456294701_899887418842941_1673521031402060848_n_2.jpg&amp;method=coverx&amp;params=570%2C360"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+              
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_5" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal"><strong>Bridging the Gap: Enhancing Career Pathways and Employment in a Changing Job Market</strong></span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_5" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_textBlock_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 19, 2024, the Deans, Associate Deans, Department Heads of DIU gathered for a significant discussion on the theme "Bridging the Gap: Enhancing Career Pathways and Employment in a Changing Job Market."<br>The meeting was graced by the presence of Professor Dr. S. M. Mahbub Ul Haque Majumder, Vice Chancellor (In-Charge) of DIU. Alongside with Dr. Mohammed Nadir Bin Ali, Honorable Registrar of DIU &amp; Dr. Mostafa Kamal, Dean, Academic Affairs,DIU.<br>The discussion focused on addressing the challenges and opportunities in preparing students for successful careers in a rapidly evolving job market.</p></td></tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_buttonBlock_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 14px 12px 14px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0PivjWCkCCeDQzYsgQy7ykqs81asrXvL6itQRMGEHGpUBNnVDQirndvnmWxWXxKGCl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_13" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_15_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_14" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_7" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal">𝐏𝐚𝐫𝐭𝐧𝐞𝐫𝐬𝐡𝐢𝐩 𝐎𝐩𝐩𝐨𝐫𝐭𝐮𝐧𝐢𝐭𝐲 𝐰𝐢𝐭𝐡 𝐆𝐫𝐚𝐦𝐞𝐞𝐧𝐩𝐡𝐨𝐧𝐞</span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_10" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F455066814_895995382565478_2709253239660399947_n.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On 14 Aug 2024, Team CDC had a fruitful online discussion Session with Farhana Hossain Shammu, Academy Program Lead, Grameenphone Ltd.<br>DIU and Grameenphone are joining forces to create incredible opportunities for our students. From career grooming to STEM projects and women empowerment initiatives.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid02bfeSbjmbFshZzarj8UEQ5ptKLUp4Yseh44gkTHcFtTqCsPiue9z7iqdCUZ1N6dDYl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_9" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_15_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_6" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-28_at_11_56_15_am.jpeg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>CDC Corporate Visit Zone</strong></span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 27, 2024, One of our representative from CDC had visited Mutual Trust Bank PLC. The visit featured productive discussions with Mr. Ashique Iqbal,Group Head,Group Research &amp; Development Department, Mutual Trust Bank Ltd. Invitations for to join the upcoming national HR Summit and the Job Utsob 2024 as a crucial part of the discussion.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0ggUVM8oncrykQwwW43gvPTpHH9eguJsAZWEHwBxDnHyRWqLxMrWBKnNZQ88j2EbGl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_7" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-27_at_10_30_02_am.jpeg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 25, 2024, the Career Development Center (CDC) team, led by Dr. Tanvir Abir, Director of CDC at DIU, visited esteemed organizations including City Group , DBL Group , and Transcom Foods Limited. The visit facilitated meaningful discussions around potential collaborations through the industry-Academia Handshaking Program and exploring career opportunities for our graduates.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0gT3MpyLQb4PWBapVF59fsyD5D83p4o8gNgHvwyvBWdWhiUT3fvQYDb96ZkQAXs43l"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_8" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_3_21_04_pm.jpeg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 15, 2024, One of our representative from CDC had visited Anwar Group of Industries and Butterfly Group. The visit featured productive discussions with Mr. Mahadi Hasan Bin Ghani, Head of HR at Butterfly Group, and Mr. Shantanu Roy, Head of HR at Anwar Group of Industries.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid02Ns8LM2y17YRtP7xPVFc2TQAck5zbQxDUTtqeZxXRiX62GUuhjUKM1GgjcgqiAURnl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_10" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_3_00_55_pm.jpeg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 21, 2024, One of our representative from CDC had visited Data soft Systems Bangladesh Limited and Celloscope Ltd Bangladesh. The visit featured productive discussions regarding potential collaborative opportunities under the Industry-Academia Handshaking Program &amp; exploring career opportunities for our graduates.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0oYDbXFYyjj6FPJqcc9WipPgUatMWHcC6wXu5KzFqjCDpArX5rZXtdDK2RXUCoYakl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_11" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F___________________________________________________________3_.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 14, 2024, CDC team had visited Vivasoft Limited , WellDev , Apsis Solutions Ltd. , Abdul Monem Ltd. and Desh Group of Companies. The visit featured productive discussions regarding potential collaborative opportunities under the Industry-Academia Handshaking Program &amp; exploring career opportunities for our graduates</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid031UpwoMBW2TcecTMGHC3S5qzWC9cHFaJoNjfNKRQFqtjzujoDDgyWSV9fnmhKMuzZl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_12" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F__________________________________________________________20240831_091123_0000.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 20, 2024, CDC team had visited DevsNest, SELISE,Dekko, Kazi &amp; Kazi tea, Dekko Legacy group. The visit featured productive discussions regarding potential collaborative opportunities under the Industry-Academia Handshaking Program &amp; exploring career opportunities for our graduates</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0VePpjJJhSjDvCx5ApdmoYwtQhVYj9rvjaV8SGrkrs2thKHEFpTe1ahu5DRWNVwVyl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_9" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_2_32_33_pm.jpeg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 22, 2024, One of our representative from CDC had visited Runner Group and Rangs Electronics Ltd.- A Leading Consumer Electronics Company in Bangladesh. The visit featured productive discussions with Md. Rabiul Alam,Head of Human Resources,Rangs Electronics Ltd. and Mr.Shah Md.Rijvi Rony,Chief Human Resources Officer (CHRO),RUNNER Group.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0bvPfcnqXhYzchPuCcjx3Z8dZR4u5sseTt4arCryJcqNUSRA9KFMAz1f3Tfa8S1x9l"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_15" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_15_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_6" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal">𝐄𝐦𝐞𝐫𝐠𝐢𝐧𝐠 𝐓𝐫𝐞𝐧𝐝𝐬 𝐚𝐧𝐝 𝐉𝐨𝐛 𝐏𝐫𝐨𝐬𝐩𝐞𝐜𝐭𝐬 𝐢𝐧 𝐭𝐡𝐞 𝐒𝐨𝐟𝐭𝐰𝐚𝐫𝐞 𝐈𝐧𝐝𝐮𝐬𝐭𝐫𝐲</span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_9" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_11" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F454068123_890781233086893_6679260987355790415_n.jpg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_textBlock_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On 4th August 2024, the team CDC had an inspiring online meeting session with Dr. Imran Mahmud, Head &amp; Associate Professor, Department of Software Engineering, DIU. The meeting was called to discuss about the required soft skills &amp; hard skills that are essential for a SWE student to achieve a job &amp; how CDC can guide SWE students to boosting up those skills for a bright career.</p></td></tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_buttonBlock_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 14px 12px 14px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0GaFpzg1wBefT6SJ8vjTVQKQF9DwJwmG8G82dm4Q7c6q9hTR2bzK1ohthPGo7zajPl"><strong>Click Here for Details&nbsp;</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_11" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F454762968_894035252761491_8739906795614956628_n_2.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>Strategic Meeting with Head of the department of Computing and Information Systems!</strong></span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">Strategic Session on Software Job Trends with Mr. Md. Sarwar Hossain Mollah, Head of the department of Computing and Information Systems! Today at the Career Development Center(CDC), we had an insightful meeting with Mr. Md Sarwar Hossain Mollah.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid0vqdAMHjuWcEvhPH5chLhEnzJfUKaVVsvVW3cfepZg7Buyx11FDRBRfgKhMPrnfokl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_13" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_2" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F455892509_899298795568470_6019830530036892741_n_2.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>Meeting with Head of the Department of Civil Engineering!</strong></span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On 18th August 2024, The CDC Office hosted a pivotal strategic session led by Dr. Mohammad Hannan Mahmud Khan, Head of the Civil Engineering Department, alongside Dr. Tanvir Abir, Director of the Career Development Center (CDC). The session, attended by key CDC team members, focused on emerging job trends.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid02rB7Kg4MzWPjc6XBPVCsiWLsSH2ZTm9btPxXh9uxwiXkAxfdfezeudxnHvogQTahUl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_12" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_5" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F457590788_906182638213419_8735292928695741166_n_2.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>Strategic Meeting with Head of the Department of Textile Engineering!</strong></span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On 28 August 2024, We had a Productive discussions and strategic planning session with Mr. Tanvir Ahmed Chowdhury, Honorable Head of the Department of Textile Engineering, DIU. The meeting was focused on strengthening effective and long lasting collaboration with industry partners to pave the way for our Textile graduates.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/share/p/ZWFfMknFiCzAw1M2/?mibextid=oFDknk"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_12" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_15_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_singleArticleBlock_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 534px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="534" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 534px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F456333725_900636355434714_2937884024946476705_n_2.jpg&amp;method=resizex&amp;params=1068%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+          <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>Knowledge Sharing Session</strong></span></td>
+    </tr>
+          <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #000000; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: justify;">On August 21, 2024, Dr. Mohammad I Kabir, with 40 years of experience across engineering, consultancy, teaching, and research, enriched Team CDC with a dynamic Life Experience Sharing Session. His extensive industry training experience since 2006 spans Kuwait, Vietnam, the USA, Saudi Arabia, East Timor, India, China, and Australia.</p></td></tr>
+          <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://www.facebook.com/diu.cdc/posts/pfbid02RvNhCjG821NmmyrermDbmJhiWgaXpZPEK5GRbiJqgSc4TiqcEJD8u48zMRpvdx9tl"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_14" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_17_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fbrain-based_wellness_20240626_150923_0000.jpg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_textBlock_2" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#548dd4" width="570" style="border-collapse: collapse; width: 100%; background-color: #548dd4; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center; line-height: normal"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px; text-align: center;"><strong>Congratulations to our successful Job Winners of August 2024.</strong><br><strong>Wishing you all the best for your future.</strong></p></td></tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#548dd4" width="570" style="border-collapse: collapse; width: 100%; background-color: #548dd4; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 0px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #ffffff; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_buttonBlock_2" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#548dd4" width="570" style="border-collapse: collapse; width: 100%; background-color: #548dd4; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="12" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 12px 14px 12px 14px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 12px; padding-left: 14px; padding-right: 14px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://drive.google.com/file/d/19_6hcMs_2XmRh-xr2tKrUlgxc9LrUgVJ/view?usp=sharing"><strong>Click Here for Details</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_10" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_15_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#262626" width="570" style="border-collapse: collapse; width: 100%; background-color: #262626; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal"><strong>Success Stories</strong></span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_7" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#262626" width="570" style="border-collapse: collapse; width: 100%; background-color: #262626; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 0px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_doubleImageBlock_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 570px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><![endif]--><!--
+        --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="285"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 285px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(324900px - 57000%)"><!--
+        --><table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="285" align="left">
+          
+              <tbody>
+              <tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 285px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="285" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 285px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F454405699_891506309681052_5622780998390243939_n.jpg&amp;method=resizex&amp;params=570%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="285"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 285px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(324900px - 57000%)"><!--
+        --><table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="285" align="left">
+          
+              <tbody>
+              <tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 285px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="285" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 285px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F454331929_892042556294094_3152910880789600599_n.jpg&amp;method=resizex&amp;params=570%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_doubleImageBlock_4" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0"><div style="width: 100%; max-width: 570px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><![endif]--><!--
+        --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="285"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 285px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(324900px - 57000%)"><!--
+        --><table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="285" align="left">
+          
+              <tbody>
+              <tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 285px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="285" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 285px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F456826935_902694491895567_5693430945663753187_n.jpg&amp;method=resizex&amp;params=570%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="285"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 285px; -mru-width: 0px; min-width: calc(50%); max-width: calc(100%); width: calc(324900px - 57000%)"><!--
+        --><table role="presentation" border="0" cellspacing="0" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="285" align="left">
+          
+              <tbody>
+              <tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 285px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="285" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 285px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F454759498_893250442839972_31137752235707615_n.jpg&amp;method=resizex&amp;params=570%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_2" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #000000; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal"><strong>Up-Coming Events</strong></span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_8" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="2" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #000000; line-height: 2px; max-height: 2px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_5" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2F10x8ft-banner---hr-summit-24-all.jpg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_7" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fwhatsapp_image_2024-08-29_at_11_23_17_am.jpeg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_6" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><a target="_new" href="https://forum.daffodilvarsity.edu.bd/index.php/topic,64731.0.html" style="color: #3f3f3f; color: #3f3f3f; text-decoration: underline; display: inline-block;"><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fnewsletter_design__570_x_320_px_.png&amp;method=resizex&amp;params=1140%2Cnull"></a><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_titleBlock2_3" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#548dd4" width="570" style="border-collapse: collapse; width: 100%; background-color: #548dd4; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 20px; font-family: Georgia, serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><span style="font-weight: normal"><strong>Student's Column</strong></span></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_hrBlock2_6" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#548dd4" width="570" style="border-collapse: collapse; width: 100%; background-color: #548dd4; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 0px; padding-bottom: 0px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" width="100%" cellspacing="0" cellpadding="0" border="0" style="border-spacing: 0; width: 100%"><tbody><tr>
+        <td width="100%" height="1" style="padding: 0; font-size: 1px; line-height: 1px; max-height: 1px; width: 100%; background-color: #ffffff; line-height: 1px; max-height: 1px; overflow: hidden">&nbsp;</td>
+      </tr></tbody></table></td>
+    </tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_doubleArticleBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#548dd4" width="570" style="border-collapse: collapse; width: 100%; background-color: #548dd4; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px"><div style="width: 100%; max-width: 552px; -mru-width: 0px"><!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="552" style="mso-padding-top-alt: 3px; mso-padding-bottom-alt: 3px"><tr><![endif]--><!--
+        --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 276px; -mru-width: 0px; padding-top: 3px; padding-bottom: 3px; min-width: calc(50%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="276" align="left">
+          
+              <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 258px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="258" height="100" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #ffffff; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 258px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fleadership.jpg&amp;method=coverx&amp;params=516%2C200"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+              
+              <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>Cultivating Expertise and Leadership</strong></span></td>
+    </tr>
+              <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #ffffff; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><hr>
+<p style="margin: 1em 0px; margin-bottom: 0px;"><strong>By: Abir Al Rashid Tasin </strong><br><strong>ID: 223-11-1027</strong><br><strong>Department of Business Administration</strong></p></td></tr>
+              <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://forum.daffodilvarsity.edu.bd/index.php/topic,64732.0.html"><strong>Read Here</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+            --><!--[if (gte mso 9)|(lte ie 8)]><td align="left" valign="top" width="276"><![endif]--><!--
+      --><div class="mobile-full" style="display: inline-block; vertical-align: top; width: 100%; max-width: 276px; -mru-width: 0px; padding-top: 3px; padding-bottom: 3px; min-width: calc(50%); max-width: calc(100%); width: calc(304704px - 55200%)"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%; -yandex-p: calc(2px - 3%)" width="276" align="left">
+          
+              <tbody><tr><td width="100%" valign="top" align="center" class="links-color" style="padding-bottom: 8px; padding: 9px; padding-top: 5px; padding-bottom: 13px"><!--[if (lte ie 8)]><div style="display: inline-block; width: 258px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="258" height="100" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #ffffff; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 258px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fambition-to-success-motivation-or-aspiration-to-achieve-goal-victory-or-career-growth-challenge-or-aiming-for-success-concept-successful-businessman-superhero-pointing-finger-up-on-mountain-peak-vector.jpg&amp;method=coverx&amp;params=516%2C200"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+              
+              <tr>
+      <td width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 18px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><span style="font-weight: normal"><strong>Transforming Ambition into Achievement</strong></span></td>
+    </tr>
+              <tr><td class="long-text links-color" width="100%" valign="top" align="left" style="font-weight: normal; color: #ffffff; font-size: 14px; font-family: Georgia, serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: left; line-height: normal"><hr>
+<p style="margin: 1em 0px; margin-bottom: 0px;"><strong>By: Sakhawat Hossain Emon</strong><br><strong>ID: 0242220004081003</strong><br><strong>Department of Business Administration</strong></p></td></tr>
+              <tr>
+      <td valign="top" align="center" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><table role="presentation" cellpadding="6" border="0" align="center" cellspacing="0" style="border-spacing: 0; mso-padding-alt: 6px 18px 6px 18px; margin-top: 2px"><tbody><tr>
+        <td width="auto" valign="middle" align="center" bgcolor="#00b0f0" style="text-align: center; font-weight: normal; padding: 6px; padding-left: 18px; padding-right: 18px; background-color: #00b0f0; color: #ffffff; font-size: 13px; font-family: Georgia, serif; border-radius: 40px"><a style="text-decoration: none; font-weight: normal; color: #ffffff; font-size: 13px; font-family: Georgia, serif" target="_new" href="https://forum.daffodilvarsity.edu.bd/index.php/topic,64733.0.html"><strong>Read Here</strong></a></td>
+      </tr></tbody></table></td>
+    </tr>
+            
+        </tbody></table><!--
+      --></div><!--[if (gte mso 9)|(lte ie 8)]></td><![endif]--><!--
+          --><!--
+      --><!--[if (gte mso 9)|(lte ie 8)]></tr></table><![endif]--></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_bigSocialBlock_1" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="9" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 3px; padding-bottom: 3px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+          <tbody><tr><td width="100%" valign="top" align="center" class="links-color socialLinks mobile-textcenter" style="font-size: 6px; font-weight: normal; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px;">
+            
+              &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_new" href="https://www.facebook.com/diu.cdc/"><img border="0" src="https://mosaico.io/templates/versafix-1/img/icons/fb-rdcol-96.png" width="32" height="32" alt="Facebook" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+            
+              
+            
+              
+            
+              &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_new" href="https://cdc.daffodilvarsity.edu.bd/"><img border="0" src="https://mosaico.io/templates/versafix-1/img/icons/web-rdcol-96.png" width="32" height="32" alt="Web" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+            
+              
+            
+              
+            
+              &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_new" href="https://www.linkedin.com/company/96639764/admin/dashboard/"><img border="0" src="https://mosaico.io/templates/versafix-1/img/icons/in-rdcol-96.png" width="32" height="32" alt="Linkedin" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+            
+              
+            
+              
+            
+              
+            
+              &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_new" href="https://www.instagram.com/career_development_center_diu?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw=="><img border="0" src="https://mosaico.io/templates/versafix-1/img/icons/inst-rdcol-96.png" width="32" height="32" alt="Instagram" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+            
+              &nbsp;<a style="display: inline-block; border-radius: 50px;" target="_new" href="https://www.youtube.com/@careerdevelopmentcenter3255"><img border="0" src="https://mosaico.io/templates/versafix-1/img/icons/you-rdcol-96.png" width="32" height="32" alt="Youtube" style="border: 0px; display: inline-block; vertical-align: top; padding-bottom: 0px;"></a>
+            
+              
+            
+              
+            
+          </td></tr>
+        
+        </tbody></table></div></td>
+    </tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+    </td></tr>
+    </tbody></table><table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#bfbfbf" id="ko_imageBlock_8" style="background-color: #bfbfbf">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+      <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" bgcolor="#ffffff" width="570" style="border-collapse: collapse; width: 100%; background-color: #ffffff; max-width: 570px; -mru-width: 0px">
+        
+        <tbody><tr><td width="100%" valign="top" align="center" class="links-color"><!--[if (lte ie 8)]><div style="display: inline-block; width: 570px; -mru-width: 0px"><![endif]--><img border="0" hspace="0" align="center" vspace="0" width="570" class="mobile-full" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #000000; font-size: 14px; font-family: Georgia, serif; width: 100%; max-width: 570px; height: auto;" src="https://mosaico.io/srv/f-qbeofjd/img?src=https%3A%2F%2Fmosaico.io%2Ffiles%2Fqbeofjd%2Fnewsletter_footer__570_x_150_px__20240627_110625_0000.jpg&amp;method=resizex&amp;params=1140%2Cnull"><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+      
+    </td></tr>
+    </tbody></table>
+
+  
+    <!-- footerBlock -->
+    <table role="presentation" class="vb-outer" width="100%" cellpadding="0" border="0" cellspacing="0" bgcolor="#3f3f3f" id="" style="background-color: #3f3f3f">
+      <tbody><tr><td class="vb-outer" align="center" valign="top" style="padding-left: 9px; padding-right: 9px; font-size: 0">
+    <!--[if (gte mso 9)|(lte ie 8)]><table role="presentation" align="center" border="0" cellspacing="0" cellpadding="0" width="570"><tr><td align="center" valign="top"><![endif]--><!--
+      --><div style="margin: 0 auto; max-width: 570px; -mru-width: 0px"><table role="presentation" class="vb-row" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; width: 100%; max-width: 570px; -mru-width: 0px" width="570">
+        
+      <tbody><tr>
+      <td align="center" valign="top" style="font-size: 0; padding: 0 9px; padding-top: 4px; padding-bottom: 4px"><div style="vertical-align: top; width: 100%; max-width: 552px; -mru-width: 0px"><!--
+        --><table role="presentation" border="0" cellspacing="9" cellpadding="0" style="border-collapse: collapse; width: 100%" width="552">
+          
+        <tbody><tr><td class="long-text links-color" width="100%" valign="top" align="center" style="font-weight: normal; color: #919191; font-size: 13px; font-family: Arial, Helvetica, sans-serif; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">Email sent to <a href="mailto:[mail]">[mail]</a></p></td></tr>
+        <tr><td width="100%" valign="top" align="center" style="font-weight: normal; color: #ffffff; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: center; padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px"><a href="[unsubscribe_link]" style="color: #ffffff; text-decoration: underline" target="_new">Unsubscribe</a></td></tr>
+        <tr style="text-align: center"><td width="100%" valign="top" align="center" class="links-color" style="padding: 9px; padding-top: 5px; padding-bottom: 5px; padding: 9px; padding-top: 5px; padding-bottom: 5px; text-align: center"><!--[if (lte ie 8)]><div style="display: inline-block; width: 170px; -mru-width: 0px"><![endif]--><a style="display: inline-block" target="_new" href="https://mosaico.io/?footerbadge"><img alt="MOSAICO Responsive Email Designer" border="0" hspace="0" align="center" vspace="0" width="170" src="https://mosaico.io/img/mosaico-badge.gif" style="border: 0px; display: block; vertical-align: top; height: auto; margin: 0 auto; color: #3f3f3f; font-size: 13px; font-family: Arial, Helvetica, sans-serif; width: 100%; max-width: 170px;"></a><!--[if (lte ie 8)]></div><![endif]--></td></tr>
+      
+        </tbody></table></div></td>
+    </tr>
+    
+      </tbody></table></div><!--
+    --><!--[if (gte mso 9)|(lte ie 8)]></td></tr></table><![endif]-->
+  </td></tr>
+    </tbody></table>
+    <!-- /footerBlock -->
+    
+</center><!--[if !(gte mso 15)]--></body><!--<![endif]--></html>

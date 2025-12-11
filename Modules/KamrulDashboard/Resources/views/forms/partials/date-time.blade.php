@@ -1,0 +1,31 @@
+@php
+    $attributes['class'] = Arr::get($attributes, 'class', '') . ' form-control';
+    $attributes['data-enable-time'] = 'true'; // ✅ enable time
+    $attributes['data-date-format'] = config('kamruldashboard.date_format.date_time');
+    $attributes['placeholder'] = $attributes['data-date-format'];
+    $attributes['data-input'] = '';
+    $attributes['readonly'] = 'readonly';
+    if ($value instanceof \Illuminate\Support\Carbon || $value instanceof \Carbon\Carbon) {
+        $value = $value->format(config('kamruldashboard.date_format.date_time'));
+    } elseif (is_string($value) && strtotime($value)) {
+        $value = \Carbon\Carbon::parse($value)->format(config('kamruldashboard.date_format.date_time'));
+    }
+//dd($value);
+@endphp
+
+<div class="input-group datetimepicker">
+
+    {!! Form::text($name, $value, $attributes) !!}
+
+    <button class="btn btn-outline-secondary" type="button" title="Toggle datetime picker" data-toggle="datetimepicker">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="16" height="16" fill="currentColor">
+            <path d="M14 2V1h-3v1H6V1H3v1H0v15h17V2h-3zM12 2h1v2h-1V2zM4 2h1v2H4V2zM16 16H1v-8.921h15V16zM1 6.079v-3.079h2v2h3V3h5v2h3V3h2v3.079H1z"/>
+        </svg>
+    </button>
+
+    <button class="btn btn-outline-danger" type="button" title="Clear" data-clear="datetimepicker">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 17" width="16" height="16" fill="currentColor">
+            <path d="M9.207 8.5l6.646 6.646-.707.707L8.5 9.207l-6.646 6.646-.707-.707L7.793 8.5 1.146 1.854l.707-.707L8.5 7.793l6.646-6.646.707.707L9.207 8.5z"/>
+        </svg>
+    </button>
+</div>
