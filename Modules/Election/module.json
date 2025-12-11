@@ -1,0 +1,17 @@
+{
+    "name": "Election",
+    "alias": "election",
+    "description": "election Plugin",
+    "is_delete": 1,
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Election\\Providers\\ElectionServiceProvider",
+        "Modules\\Election\\Providers\\HookServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "Http/helpers/helpers.php"
+    ],
+    "requires": []
+}
